@@ -64,13 +64,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\Data.cs" />
+    <Compile Include="Assets\Scripts\DataMultiColor.cs" />
+    <Compile Include="Assets\Scripts\DataSoloColor.cs" />
     <Compile Include="Assets\Scripts\Factory\DataSpawn.cs" />
     <Compile Include="Assets\Scripts\Factory\FactorySpawn.cs" />
     <Compile Include="Assets\Scripts\Factory\IDataSpawn.cs" />
     <Compile Include="Assets\Scripts\Factory\IFactorySpawn.cs" />
     <Compile Include="Assets\Scripts\IData.cs" />
-    <Compile Include="Assets\Scripts\NewData.cs" />
     <Compile Include="Assets\Scripts\ObjectPool\IObjectPool.cs" />
     <Compile Include="Assets\Scripts\ObjectPool\ObjectPool.cs" />
     <Compile Include="Assets\Scripts\Partycle\DataPartycle.cs" />
@@ -79,7 +79,8 @@
     <Compile Include="Assets\Scripts\Partycle\Partycle.cs" />
     <Compile Include="Assets\Scripts\PartycleController.cs" />
     <Compile Include="Assets\Scripts\Spawner\ISpawner.cs" />
-    <Compile Include="Assets\Scripts\Spawner\Spawner.cs" />
+    <Compile Include="Assets\Scripts\Spawner\SpawnerMultiColor.cs" />
+    <Compile Include="Assets\Scripts\Spawner\SpawnerSoloColor.cs" />
     <Reference Include="UnityEngine">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>

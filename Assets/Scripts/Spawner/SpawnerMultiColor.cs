@@ -1,18 +1,16 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class Spawner : ISpawner
+class SpawnerMultiColor : ISpawner
 {
-    private Data Data { get; set; }
+    private DataMultiColor Data { get; set; }
     private IObjectPool objectPool;
     private float timeNow = 0;
     private Transform parentMovePartycle;
     private float timeSpawn = 0;
 
-    public Spawner(IObjectPool objectPool, Data Data, Transform parentMovePartycle)
+    public SpawnerMultiColor(IObjectPool objectPool, IData Data, Transform parentMovePartycle)
     {
-        this.Data = Data;
+        this.Data = Data as DataMultiColor;
         this.objectPool = objectPool;
         this.parentMovePartycle = parentMovePartycle;
         timeSpawn = SetRandomTimeSpawn();
@@ -31,14 +29,13 @@ public class Spawner : ISpawner
         partycle.Initialize(UpdateDataPartycle());
         partycle.GameObject.transform.SetParent(parentMovePartycle);
         UpdatePartycleTransform(partycle);
-        partycle.IsActive = true;        
+        partycle.IsActive = true;
     }
 
     private DataPartycle UpdateDataPartycle()
     {
         DataPartycle data = new DataPartycle();
-        data.Color = Data.Color;
-        data.Material = Data.Material;
+        data.Material = Data.Materials[Random.Range(0, Data.Materials.Length)];
         data.Speed = Random.Range(Data.Speed.Min, Data.Speed.Max);
         data.TimeLife = Random.Range(Data.TimeLife.Min, Data.TimeLife.Max);
         return data;
@@ -61,7 +58,7 @@ public class Spawner : ISpawner
 
     public void Timer()
     {
-        if(timeNow > timeSpawn)
+        if (timeNow > timeSpawn)
         {
             timeNow = 0;
             timeSpawn = SetRandomTimeSpawn();

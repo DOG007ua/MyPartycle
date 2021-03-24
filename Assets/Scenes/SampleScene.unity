@@ -121,6 +121,71 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &349891632
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 349891633}
+  - component: {fileID: 349891634}
+  m_Layer: 0
+  m_Name: DataMultiColor
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &349891633
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 349891632}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 4.7289906, y: 6.4521933, z: 9.730022}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &349891634
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 349891632}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c8c691720f17bc408b5c35f96f5a28f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <RangeAngle>k__BackingField: 30
+  <PrafabPartycle>k__BackingField: {fileID: 284755375088852393, guid: bb0d222cbfa28b04fa81ee0646be6a02,
+    type: 3}
+  <TimeStepSpawn>k__BackingField:
+    Min: 0.2
+    Max: 0.5
+  <Speed>k__BackingField:
+    Min: 3
+    Max: 10
+  <TimeLife>k__BackingField:
+    Min: 2
+    Max: 5
+  OriginalMaterials: {fileID: 2100000, guid: ea72fa8ee08293b4db5cb266708eda8f, type: 2}
+  Materials: []
+  <Size>k__BackingField:
+    Min: 0.7
+    Max: 1.5
+  Colors:
+  - {r: 1, g: 0, b: 0, a: 1}
+  - {r: 0.19737887, g: 1, b: 0, a: 1}
+  - {r: 0, g: 0.05708027, b: 1, a: 1}
+  - {r: 1, g: 0, b: 0.8624263, a: 1}
 --- !u!1 &482856838
 GameObject:
   m_ObjectHideFlags: 0
@@ -150,6 +215,66 @@ Transform:
   m_Children: []
   m_Father: {fileID: 768334401}
   m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &512588434
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 512588436}
+  - component: {fileID: 512588435}
+  m_Layer: 0
+  m_Name: DataSoloColor
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &512588435
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 512588434}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11ed9304942497846bc4a468bff7bd80, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <RangeAngle>k__BackingField: 30
+  <PrafabPartycle>k__BackingField: {fileID: 284755375088852393, guid: bb0d222cbfa28b04fa81ee0646be6a02,
+    type: 3}
+  <TimeStepSpawn>k__BackingField:
+    Min: 0.5
+    Max: 1
+  <Speed>k__BackingField:
+    Min: 3
+    Max: 10
+  <TimeLife>k__BackingField:
+    Min: 0.5
+    Max: 3
+  Material: {fileID: 2100000, guid: ea72fa8ee08293b4db5cb266708eda8f, type: 2}
+  <Size>k__BackingField:
+    Min: 0.7
+    Max: 1.5
+  Color: {r: 1, g: 0, b: 0, a: 1}
+--- !u!4 &512588436
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 512588434}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 4.7289906, y: 6.4521933, z: 9.730022}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &705507993
 GameObject:
@@ -253,7 +378,6 @@ GameObject:
   m_Component:
   - component: {fileID: 768334401}
   - component: {fileID: 768334400}
-  - component: {fileID: 768334402}
   m_Layer: 0
   m_Name: Partycle
   m_TagString: Untagged
@@ -273,7 +397,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 386f3956828ec9b4e9c03992386ff839, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  data: {fileID: 768334402}
+  dataTransform: {fileID: 349891633}
   poolPartycleParent: {fileID: 1919538818}
   movePartycleParent: {fileID: 482856839}
 --- !u!4 &768334401
@@ -292,35 +416,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &768334402
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 768334399}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 177255feb65b7b7449d804d1111caa83, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  RangeAngle: 30
-  PrafabPartycle: {fileID: 284755375088852393, guid: bb0d222cbfa28b04fa81ee0646be6a02,
-    type: 3}
-  TimeStepSpawn:
-    Min: 1
-    Max: 1.5
-  Speed:
-    Min: 3
-    Max: 5
-  TimeLife:
-    Min: 2
-    Max: 4
-  Material: {fileID: 2100000, guid: ea72fa8ee08293b4db5cb266708eda8f, type: 2}
-  Size:
-    Min: 0.7
-    Max: 1.5
-  Color: {r: 1, g: 0, b: 0, a: 1}
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -398,7 +493,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalPosition: {x: 0, y: 4.6, z: -23.2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}

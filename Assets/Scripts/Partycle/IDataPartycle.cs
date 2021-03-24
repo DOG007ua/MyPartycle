@@ -8,5 +8,5 @@ public interface IDataPartycle
     float TimeLife { get; set; }
 
     Material Material { get; set; }
-    Color Color { get; set; }
+    //Color Color { get; set; }
 }
