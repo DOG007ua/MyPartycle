@@ -8,9 +8,9 @@ class SpawnerMultiColor : ISpawner
     private Transform parentMovePartycle;
     private float timeSpawn = 0;
 
-    public SpawnerMultiColor(IObjectPool objectPool, IData Data, Transform parentMovePartycle)
+    public SpawnerMultiColor(IObjectPool objectPool, DataMultiColor Data, Transform parentMovePartycle)
     {
-        this.Data = Data as DataMultiColor;
+        this.Data = Data;
         this.objectPool = objectPool;
         this.parentMovePartycle = parentMovePartycle;
         timeSpawn = SetRandomTimeSpawn();

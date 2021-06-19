@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class FactorySpawn : IFactorySpawn
 {
-    private IData Data { get; set; }
+    private DataMultiColor Data { get; set; }
 
-    public FactorySpawn(IData data)
+    public FactorySpawn(DataMultiColor data)
     {
         Data = data;
     }

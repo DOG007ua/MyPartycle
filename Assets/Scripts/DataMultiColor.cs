@@ -2,16 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DataMultiColor : MonoBehaviour, IData
+public class DataMultiColor : MonoBehaviour
 {
-    [field: SerializeField]public float RangeAngle { get; set; }
-    [field: SerializeField] public GameObject PrafabPartycle { get; set; }
-    [field: SerializeField] public RangeData TimeStepSpawn { get; set; }
-    [field: SerializeField] public RangeData Speed { get; set; }
-    [field: SerializeField] public RangeData TimeLife { get; set; }
+    public float RangeAngle;
+    public GameObject PrafabPartycle;
+    public RangeData TimeStepSpawn;
+    public RangeData Speed;
+    public RangeData TimeLife;
     public Material OriginalMaterials;
     public Material[] Materials;
-    [field: SerializeField] public RangeData Size { get; set; }
+    public RangeData Size;
     public Color[] Colors;
 
 
